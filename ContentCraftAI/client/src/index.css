@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 210 40% 98%;
+  --foreground: 222 47% 11%;
+  --muted: 60 4.8% 95.9%;
+  --muted-foreground: 25 5.3% 44.7%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222 47% 11%;
+  --card: 0 0% 100%;
+  --card-foreground: 222 47% 11%;
+  --border: 214 32% 91%;
+  --input: 214 32% 91%;
+  --primary: 252 77% 64%;
+  --primary-foreground: 211 100% 99%;
+  --secondary: 60 4.8% 95.9%;
+  --secondary-foreground: 24 9.8% 10%;
+  --accent: 60 4.8% 95.9%;
+  --accent-foreground: 24 9.8% 10%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 60 9.1% 97.8%;
+  --ring: 222 47% 11%;
+  --radius: 0.5rem;
+  
+  /* Custom colors from design */
+  --primary-50: 240 100% 97%;
+  --primary-100: 240 100% 94%;
+  --primary-200: 240 100% 89%;
+  --primary-300: 240 100% 84%;
+  --primary-400: 240 100% 78%;
+  --primary-500: 252 77% 64%;
+  --primary-600: 244 68% 57%;
+  --primary-700: 248 53% 46%;
+  --primary-800: 244 40% 38%;
+  --primary-900: 246 30% 30%;
+  
+  --secondary-50: 327 100% 97%;
+  --secondary-100: 329 100% 93%;
+  --secondary-200: 327 100% 85%;
+  --secondary-300: 328 100% 72%;
+  --secondary-400: 331 92% 62%;
+  --secondary-500: 337 83% 57%;
+  --secondary-600: 340 82% 52%;
+  --secondary-700: 339 84% 42%;
+  --secondary-800: 339 88% 35%;
+  --secondary-900: 339 89% 25%;
+  
+  --slate-50: 210 40% 98%;
+  --slate-800: 218 36% 18%;
+  --slate-900: 222 47% 11%;
+  
+  --success: 154 75% 40%;
+  --error: 340 90% 60%;
+  --warning: 35 92% 50%;
+  
+  /* Platform colors */
+  --tiktok: 346 100% 60%;
+  --youtube: 0 100% 50%;
+  --instagram-start: 283 67% 46%;
+  --instagram-middle: 353 88% 55%;
+  --instagram-end: 35 100% 63%;
+}
+
+.dark {
+  --background: 222 47% 11%;
+  --foreground: 210 40% 98%;
+  --muted: 217 33% 17%;
+  --muted-foreground: 215 20.2% 65.1%;
+  --popover: 222 47% 11%;
+  --popover-foreground: 210 40% 98%;
+  --card: 222 47% 11%;
+  --card-foreground: 210 40% 98%;
+  --border: 217 33% 17%;
+  --input: 217 33% 17%;
+  --primary: 252 77% 64%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 217 33% 17%;
+  --secondary-foreground: 210 40% 98%;
+  --accent: 217 33% 17%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 212.7 26.8% 83.9%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+.bg-gradient-primary {
+  @apply bg-gradient-to-r from-[#5D5FEF] to-[#E83A7A];
+}
+
+.instagram-gradient {
+  @apply bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#FCAF45];
+}
+
+.tiktok-bg {
+  background-color: #FE2C55;
+}
+
+.youtube-bg {
+  background-color: #FF0000;
+}
