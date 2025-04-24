@@ -62,7 +62,7 @@ The application will be available at port 5000.
 
 ## License
 
-MIT
+Subhajit Mandal
 
 ## Support
 
